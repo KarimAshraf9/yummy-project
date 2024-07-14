@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-black">
+    <div
+      class="loading position-fixed start-0 end-0 top-0 bottom-0 bg-black z-2 bg-opacity-100"
+    >
+      <i><i class="fa-solid fa-spinner fa-spin text-white fa-5x"></i></i>
+    </div>
+
+    <nav class="bg-danger d-flex">
+      <div
+        class="navLeftSide bg-black text-white px-4 py-4 d-flex flex-column justify-content-between"
+      >
+        <div>
+          <ul class="list-unstyled navTop">
+            <li class="mb-3 link1 links">Search</li>
+            <li class="mb-3 link2 links">Categories</li>
+            <li class="mb-3 link3 links">Area</li>
+            <li class="mb-3 link4 links">Ingredients</li>
+            <li class="mb-3 link5 links">Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="list-unstyled d-flex mb-0">
+            <li>
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="mx-2">
+              <a href="#" class="text-white"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="text-white"
+                ><i class="fa-solid fa-globe"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="text-white">Copyright Â© 2019 All Rights<br />Reserved.</p>
+        </div>
+      </div>
+
+      <div
+        class="navRightSide bg-white px-2 py-4 d-flex flex-column justify-content-between align-items-center"
+      >
+        <img src="./images/logo.png" alt="" />
+        <i class="fa-solid fa-bars fa-3x"></i>
+        <ul class="list-unstyled mb-0">
+          <li>
+            <a href="#" class="text-black"><i class="fa-solid fa-globe"></i></a>
+          </li>
+          <li>
+            <a href="#" class="text-black"
+              ><i class="fa-solid fa-share-nodes"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="homeSection d-none">
+      <div class="container my-5">
+        <div class="row gy-4">
+          <!-- <div class="col-md-3">
+                    <figure class="position-relative mb-0 rounded overflow-hidden">
+                        <img src="./images/soup.jpg" class="w-100" alt="">
+                        <figcaption class="position-absolute top-0 start-0 bottom-0 end-0 bg-white bg-opacity-75 d-flex align-items-center rounded">
+                            <h3 class="ms-2">Lorem, ipsum.</h3>
+                        </figcaption>
+                    </figure>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="categorySection d-none">
+      <div class="container my-5">
+        <div class="row gy-4">
+          <!-- <div class="col-md-3">
+                    <figure class="position-relative mb-0 rounded overflow-hidden">
+                        <img src="./images/beef.png" class="w-100" alt="">
+                        <figcaption class="position-absolute top-0 start-0 bottom-0 end-0 bg-white bg-opacity-75 text-center pt-2 rounded">
+                            <h3>Beef</h3>
+                            <p class="mb-0">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1]</p>
+                        </figcaption>
+                    </figure>
+                </div>-->
+        </div>
+      </div>
+    </section>
+
+    <section class="areaSection d-none">
+      <div class="container my-5">
+        <div class="row gy-4">
+          <!-- <div class="col-md-3">
+                    <figure class="text-white text-center mb-0">
+                        <i class="fa-solid fa-house-laptop fa-4x"></i>
+                        <figcaption>
+                            <h3>American</h3>
+                        </figcaption>
+                    </figure>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="ingredientsSection d-none">
+      <div class="container my-5">
+        <div class="row gy-4">
+          <!-- <div class="col-md-3">
+                    <figure class="text-white text-center mb-0">
+                        <i class="fa-solid fa-drumstick-bite fa-4x"></i>
+                        <figcaption class="text-center">
+                            <h3>American</h3>
+                            <p class="mb-0">frfrfrfrfrf</p>
+                        </figcaption>
+                    </figure>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="searchSection d-none">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-5 offset-md-2">
+            <div>
+              <input
+                type="text"
+                id="input1"
+                class="form-control bg-transparent text-white"
+                placeholder="Search By Name"
+              />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div>
+              <input
+                type="text"
+                id="input2"
+                maxlength="1"
+                class="form-control bg-transparent text-white"
+                placeholder="Search By First Letter"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row gy-4">
+          <!-- <div class="col-md-3">
+                    <figure class="position-relative mb-0 rounded overflow-hidden">
+                        <img src="./images/soup.jpg" class="w-100" alt="">
+                        <figcaption class="position-absolute top-0 start-0 bottom-0 end-0 bg-white bg-opacity-75 d-flex align-items-center rounded">
+                            <h3 class="ms-2">Lorem, ipsum.</h3>
+                        </figcaption>
+                    </figure>
+                </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contactSection vh-100 d-flex align-items-center d-none">
+      <form class="container">
+        <div class="row gy-4">
+          <div class="col-md-4 offset-md-2 col-8 offset-2">
+            <div>
+              <input
+                id="name"
+                type="text"
+                class="form-control"
+                placeholder="Enter Your Name"
+              />
+              <p
+                class="bg-danger-subtle text-center py-3 rounded mb-0 mt-2 d-none"
+              >
+                Special characters and numbers not allowed
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-8 offset-md-0 offset-2">
+            <div>
+              <input
+                id="email"
+                type="email"
+                class="form-control"
+                placeholder="Enter Your Email"
+              />
+              <p
+                class="bg-danger-subtle text-center py-3 rounded mb-0 mt-2 d-none"
+              >
+                Email not valid *exemple@yyy.zzz
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-2 col-8 offset-2">
+            <div>
+              <input
+                id="phone"
+                type="tel"
+                class="form-control"
+                placeholder="Enter Your Phone"
+              />
+              <p
+                class="bg-danger-subtle text-center py-3 rounded mb-0 mt-2 d-none"
+              >
+                Enter valid Phone Number
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-8 offset-md-0 offset-2">
+            <div>
+              <input
+                id="age"
+                type="number"
+                class="form-control"
+                placeholder="Enter Your Age"
+              />
+              <p
+                class="bg-danger-subtle text-center py-3 rounded mb-0 mt-2 d-none"
+              >
+                Enter valid age
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-2 col-8 offset-2">
+            <div>
+              <input
+                id="password"
+                type="password"
+                class="form-control"
+                placeholder="Enter Your Password"
+              />
+              <p
+                class="bg-danger-subtle text-center py-3 rounded mb-0 mt-2 d-none"
+              >
+                Enter valid password *Minimum eight characters, at least one
+                letter and one number:*
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-8 offset-md-0 offset-2">
+            <div>
+              <input
+                id="re-password"
+                type="password"
+                class="form-control"
+                placeholder="Repassword"
+              />
+              <p
+                class="bg-danger-subtle text-center py-3 rounded mb-0 mt-2 d-none"
+              >
+                Enter valid repassword
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-outline-danger d-block mx-auto mt-3 disabled">
+          submit
+        </button>
+      </form>
+    </section>
+
+    <section class="detailSection d-none">
+      <div class="container my-5">
+        <div class="row">
+          <div class="col-md-4 detailSectionLeftSide">
+            <!-- <figure>
+                        <img src="./images/soup.jpg" class="w-100 rounded" alt="">
+                        <figcaption>
+                            <h2 class="text-white">Corba</h2>
+                        </figcaption>
+                    </figure> -->
+          </div>
+
+          <div class="col-md-8 text-white detailSectionRightSide">
+            <!-- <h2>Instructions</h2>
+                    <p>Pick through your lentils for any foreign debris, rinse them 2 or 3 times, drain, and set aside. Fair warning, this will probably turn your lentils into a solid block that you’ll have to break up later In a large pot over medium-high heat, sauté the olive oil and the onion with a pinch of salt for about 3 minutes, then add the carrots and cook for another 3 minutes. Add the tomato paste and stir it around for around 1 minute. Now add the cumin, paprika, mint, thyme, black pepper, and red pepper as quickly as you can and stir for 10 seconds to bloom the spices. Congratulate yourself on how amazing your house now smells. Immediately add the lentils, water, broth, and salt. Bring the soup to a (gentle) boil. After it has come to a boil, reduce heat to medium-low, cover the pot halfway, and cook for 15-20 minutes or until the lentils have fallen apart and the carrots are completely cooked. After the soup has cooked and the lentils are tender, blend the soup either in a blender or simply use a hand blender to reach the consistency you desire. Taste for seasoning and add more salt if necessary. Serve with crushed-up crackers, torn up bread, or something else to add some extra thickness. You could also use a traditional thickener (like cornstarch or flour), but I prefer to add crackers for some texture and saltiness. Makes great leftovers, stays good in the fridge for about a week.</p>
+                    <h3>Area : Turkish</h3>
+                    <h3>Category : Side</h3>
+                    <h3>Recipes :</h3>
+                    <ul class="list-unstyled d-flex flex-wrap recipes">
+                        <li>1 cup Lentils</li>
+                    </ul>
+                    <h3>Tags :</h3>
+                    <ul class="list-unstyled mt-3 d-flex flex-wrap tags">
+                        <li>Soup</li>
+                    </ul>
+                    <a href="#" class="btn bg-success text-white">Source</a>
+                    <a href="#" class="btn bg-danger text-white">Youtube</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
