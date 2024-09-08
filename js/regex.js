@@ -57,4 +57,3 @@ export function validateInputs() {
     submitButton.removeClass("disabled");
   });
 }
-

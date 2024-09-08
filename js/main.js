@@ -11,13 +11,9 @@ import {
   fetchMealByIngredient,
 } from "./fetchingData.js";
 
-// ------------------------------------------------------------------------------------
-
 // loading icon
 
 const loadingSection = $(".loading");
-
-// ------------------------------------------------------------------------------------
 
 // open and close nav bar
 
@@ -26,7 +22,7 @@ const navbarLeftsideWidth = $(".navLeftSide").outerWidth(true);
 const navbarBurger = $(".navRightSide .fa-bars");
 const navbarLeftSideLinks = $(".navLeftSide ul.navTop li");
 const navbarRightsideWidth = $(".navRightSide").outerWidth(true);
-console.log("🚀 ~ navbarRightsideWidth:", navbarRightsideWidth)
+console.log("🚀 ~ navbarRightsideWidth:", navbarRightsideWidth);
 
 navbarBurger.click(() => {
   if (navbar.offset().left == 0) {
@@ -40,8 +36,6 @@ navbarBurger.click(() => {
     navbarLeftSideLinks.addClass("hh");
   }
 });
-
-// ------------------------------------------------------------------------------------
 
 // display home cards
 
@@ -72,8 +66,6 @@ const homeCards = getMainMealCards(homeData);
 homeSection.removeClass("d-none");
 homeCardsSection.html(homeCards);
 loadingSection.fadeOut(1000);
-
-// ------------------------------------------------------------------------------------
 
 // display categories cards
 
@@ -117,8 +109,6 @@ window.getMealsByCategory = async function (category) {
   loadingSection.fadeOut(1000);
 };
 
-// ------------------------------------------------------------------------------------
-
 // display area cards
 
 const areaCards = $(`.areaSection .row`);
@@ -161,8 +151,6 @@ window.getMealsByArea = async function (area) {
   homeSection.removeClass("d-none");
   loadingSection.fadeOut(1000);
 };
-
-// ------------------------------------------------------------------------------------
 
 // display ingredients cards
 
@@ -209,8 +197,6 @@ window.getMealsByIngredient = async function (ingredient) {
   homeSection.removeClass("d-none");
   loadingSection.fadeOut(1000);
 };
-
-// ------------------------------------------------------------------------------------
 
 // display search cards by name
 
@@ -259,8 +245,6 @@ document
     }
   });
 
-// ------------------------------------------------------------------------------------
-
 // display contact section
 
 const contactButton = $(".navLeftSide .link5");
@@ -272,8 +256,6 @@ contactButton.click(async () => {
   conatctSection.siblings().not("nav,div").addClass("d-none");
   conatctSection.removeClass("d-none");
 });
-
-// ------------------------------------------------------------------------------------
 
 // display detail section
 
@@ -333,12 +315,8 @@ window.displayMealDetail = async function (mealId) {
   loadingSection.fadeOut(1000);
 };
 
-// ------------------------------------------------------------------------------------
-
 // check signup form to open the buuton
 
 import { validateInputs } from "./regex.js";
 
 validateInputs();
-
-// ------------------------------------------------------------------------------------

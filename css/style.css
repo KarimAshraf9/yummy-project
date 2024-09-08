@@ -1,122 +1,109 @@
 /* common */
 
-.homeSection figcaption, .categorySection figcaption ,.searchSection figcaption{
-    transform: translateY(100%);
-    transition: all 0.5s;
+.homeSection figcaption,
+.categorySection figcaption,
+.searchSection figcaption {
+  transform: translateY(100%);
+  transition: all 0.5s;
 }
 
-.homeSection figure:hover, .categorySection figure:hover, .searchSection figure:hover{
-    figcaption{
-        transform: translateY(0%);
-    }
-
+.homeSection figure:hover,
+.categorySection figure:hover,
+.searchSection figure:hover {
+  figcaption {
+    transform: translateY(0%);
+  }
 }
 
-figure{
-    cursor: pointer;
+figure {
+  cursor: pointer;
 }
-
-
-
 
 /* loading styling */
-.loading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* navbar styling */
 
-nav{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -256.562px;
-    z-index: 1;
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -256.562px;
+  z-index: 1;
 }
 
-.navRightSide img{
-    width: 50px;
+.navRightSide img {
+  width: 50px;
 }
 
-.navRightSide i{
-    cursor: pointer;
+.navRightSide i {
+  cursor: pointer;
 }
 
-.navLeftSide li{
-    cursor: pointer;
+.navLeftSide li {
+  cursor: pointer;
 }
 
-.links{
-    transform: translateY(150px);
-    transition: transform 1s;
-
+.links {
+  transform: translateY(150px);
+  transition: transform 1s;
 }
 
-.hh{
-    transform: translateY(0px);
+.hh {
+  transform: translateY(0px);
 }
-
-
-
-
 
 /* Category Section Styling */
 
-.categorySection figcaption p , .ingredientsSection figcaption p{
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-            line-clamp: 4; 
-    -webkit-box-orient: vertical;
+.categorySection figcaption p,
+.ingredientsSection figcaption p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
-
-
 
 /* Area Section Styling */
 
-.areaSection figure , .ingredientsSection figure{
-    cursor: pointer;
+.areaSection figure,
+.ingredientsSection figure {
+  cursor: pointer;
 }
-
-
-
 
 /* Search Section Styling */
 
-.searchSection input::placeholder{
-    color: gray;
+.searchSection input::placeholder {
+  color: gray;
 }
-
-
 
 /* Detail Section Styling */
 
-.detailSection ul.recipes li{
-    background-color: rgb(207, 244, 252);
-    color: black;
-    border: 1px solid;
-    border-radius: 6px;
-    padding: 4px;
-    margin: 8px;
+.detailSection ul.recipes li {
+  background-color: rgb(207, 244, 252);
+  color: black;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 4px;
+  margin: 8px;
 }
 
-.detailSection ul.tags li{
-    background-color: rgb(248, 215, 218);
-    color: black;
-    border: 1px solid;
-    border-radius: 6px;
-    padding: 4px;
-    margin: 0px 8px 30px 8px;
-    width: fit-content;
+.detailSection ul.tags li {
+  background-color: rgb(248, 215, 218);
+  color: black;
+  border: 1px solid;
+  border-radius: 6px;
+  padding: 4px;
+  margin: 0px 8px 30px 8px;
+  width: fit-content;
 }
-
 
 @media screen and (max-width: 1300px) {
-    .container{
-    
-        padding-left: 80px;
-    }
+  .container {
+    padding-left: 80px;
   }
+}
