@@ -37,6 +37,15 @@ navbarBurger.click(() => {
   }
 });
 
+// display homeSection when click on logo
+
+const logoImage = $(".navRightSide img");
+
+logoImage.click(()=>{
+  homeSection.siblings().not("nav,div").addClass("d-none");
+  homeSection.removeClass("d-none");
+})
+
 // display home cards
 
 const homeCardsSection = $(`.homeSection .row`);

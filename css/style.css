@@ -57,6 +57,10 @@ nav {
   transform: translateY(0px);
 }
 
+.navRightSide img{
+  cursor: pointer;
+}
+
 /* Category Section Styling */
 
 .categorySection figcaption p,
